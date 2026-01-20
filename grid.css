@@ -1,19 +1,22 @@
+.font-inter {
+  font-family: "Inter", sans-serif;
+   
+}
 
-/* Responsive for medium device ≥ 768px */
-@media (min-width: 768px) {
+
+/* for Medium device: 576px - 991px */
+@media (min-width: 576px) and (max-width: 991px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* item-1 full width in medium */
   .item-1 {
-    grid-column: span 2;
-
+    grid-column: span 2; 
   }
 }
 
-/* Responsive: for large device ≥ 1024px  */
-@media (min-width: 1024px) {
+/* For Large device: 992px and above */
+@media (min-width: 992px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
@@ -21,11 +24,10 @@
       "items-1 items-3 items-3"
       "items-4 items-4 items-5";
   }
-.item-1 { grid-area: items-1; }
+
+  .item-1 { grid-area: items-1; }
   .item-2 { grid-area: items-2; }
   .item-3 { grid-area: items-3; }
   .item-4 { grid-area: items-4; }
   .item-5 { grid-area: items-5; }
-  
 }
-
